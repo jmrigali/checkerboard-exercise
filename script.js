@@ -9,8 +9,11 @@ for(var i = 0; i < 81; i++) {
   tile.style.float="left";
   tile.style.paddingBottom= "11.1%";
   tile.style.backgroundColor= color;
+  tile.style.opacity = 0.5;
+  body.style.background= "linear-gradient(0deg, white, orange)";
   body.appendChild(tile);
 }
+
 }
 
 
@@ -25,4 +28,4 @@ var color="#";
 }
 
 createCheckerboard();
-window.setInterval(createCheckerboard,200);
+// window.setInterval(createCheckerboard,200);
